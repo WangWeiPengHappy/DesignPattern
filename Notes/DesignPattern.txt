@@ -1,0 +1,69 @@
+2021-03-15
+
+1.基本概念
+封装
+抽象
+多态
+
+弹性vs复杂性 正相关
+is-a vs has-a
+接口 vs 实现
+接口即协议
+
+2. Ref：
+C++对象模型
+Cloud design patterns
+重构
+UML精粹
+
+3.原则vs模式
+原则：方向
+高内聚
+低耦合
+
+callee和caller之间加一些Cache
+classic vs cloud pattern
+--->指导工程设计
+
+4.原则
+可维护
+可扩展
+可阅读性
+可重用
+
+5. SOLID
+SRP：
+代码量变大，会复杂，很难落地
+好维护，好理解
+尽量追求
+
+OCP
+留有弹性扩展空间
+design：留有扩展空间
+修改：尽量不影响现有的code，framework和flow
+caller，不需要关心实现
+callee，尽量隐藏细节
+
+LSP
+派生类遵循接口所定义的协议
+caller完全不需要了解实现细节
+
+ISP
+不要向caller提供过多不用的接口
+isp遵循LSP
+
+DIP
+高层和底层相互隔离
+
+面向接口编程
+
+
+
+
+
+
+
+
+
+
+
