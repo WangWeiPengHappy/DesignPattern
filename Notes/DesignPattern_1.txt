@@ -58,10 +58,29 @@ DIP
 面向接口编程
 
 
+2021-03-22
+1. Anti Pattern
+明显低效或者有待优化的设计模式
+解决问题时，共性的不良方法
+总结出来的不良设计
+BadSmelling
 
+成本
+on-promise-->SASS模式，成本还会加剧
 
+overview：
+1)software design
+大泥球
 
+2)OO 编程
+循环依赖
 
+broker
+
+3)编程
+hardcode
+magic number不解释
+Busy waitting
 
 
 
