@@ -1,0 +1,25 @@
+2021-03-29
+Structal pattern
+组合类或者对象，获得更大的结构
+
+Adapter
+
+proxy
+流量控制
+认证与授权
+Cache
+
+issue:proxy 会角色过重，成为瓶颈
+subject：目标ß
+
+Beahvior pattern
+对象和对象（类和类）之间怎么交互和分配职责
+Iterator
+
+
+Strategy
+一系列算法，相互替换
+ 
+Iterator
+
+NULL object
