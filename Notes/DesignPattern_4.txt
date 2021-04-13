@@ -1,0 +1,42 @@
+2021-4-12
+1.background
+docker 
+k8s 兼容现有的docker
+
+2.Concurrency program
+====》量大，快
+2.1 Reactor原理
+
+2.2 线程池
+    NodeJs的运行原理，多线程处理异步请求
+    自己搭建邮件服务器---->trend smex
+    of365-------------->trend csa ：refactor+线程池+ 其他思想：workThread 有自己的work queue，可以避免多线程加锁取资源的问题
+
+    模式：
+    HS/HF
+    领导者/追随者： 领导只挂了，如何快速选举出新的leader
+
+2.3 读写锁
+
+双重检查： 为什么double， 内存屏障
+静态变量初始化
+
+3.cloud design pattern
+3.1 Message queue
+producer ---> queue---->consumer
+
+MSMQ(for on premise)
+On premise, 自己买硬件自己搭server
+
+Cloud MQ 
+Sender(n)-----> shared message queue------>receiver(n)
+
+协议
+
+Azure
+Queue and topic message 
+
+         ------>|shared message queue------>receiver(n)
+Sender(n)------>|shared message queue------>receiver(n)
+         ------>|shared message queue------>receiver(n)
+带topic，可以根据topic进行定向分发
