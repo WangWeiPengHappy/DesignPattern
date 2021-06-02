@@ -1,0 +1,41 @@
+2021-04-19
+
+1. EventSource
+只添加，不维护状态机
+
+2. SAAS模式
+saas 
+paas
+iaas
+                on-premises(驻场)   Iaas    paas  saas
+Application      1                   1       1                                                                                
+Data             1                   1       1                                                                   
+RunTime          1                   1                                                                             
+Middleware       1                   1                                                                               
+OS               1                   1                                                                        
+Virtualization   1                                                                                                       
+Servers          1                                                                                                
+Storage          1                                                                                                
+Networking       1                                                                                                   
+1: self manager 
+
+基于sass--->zero trust
+pass----->编排问题： docker k8s
+
+3.docker k8s
+主机
+|
+|
+虚拟化
+|
+|
+容器化
+
+虚拟机                  docker                  k8s
+APP                     APP
+Bins                    Bins
+GuestOS                 ContainerEngine
+Hypevisor               OS
+Infrastructure          Infrastructure
+
+APP可以死，但是数据不能丢
