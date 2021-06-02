@@ -1,0 +1,40 @@
+UnitTest
+如何测试函数里包含now函数
+1）解释型python： 注入，更改now的实现
+2）编译型C++： 更改now，写成datetime::now().  UT的时候，写个fake的datetime
+
+
+TestDouble
+UT->code->dependcyObject
+UT->code->TestDouble
+用testDouble代替dependcyObject
+
+
+TestDouble
+1）DummyObject（空的，类似占位。填充参数列表，但是并么有实际用到）
+=====》完全不关心实现
+2）TestStub（打桩）
+  --HardCode
+  --配置文件
+3）TestSpy（获取被测函数调用的次数、参数）
+  是个stub，同时会记录是怎么被调用的。靠记录的信息去verify
+=====》Verify indirect output
+4）MockObject（Mock里会返回期望的值）
+=====》Verify indirect output
+5）FakeObject(比mock更轻量化， 简单实现)
+=====》加速实现
+
+Mock和Stub的区别
+Stub 影响是CodeUnderTest的结果，Test的是CodeUnderTest
+Mock 。。。。。。。。。。。。。。，Test的是Mock的状态的改变。
+
+
+
+Auto UnitTest
+
+2)IntelliTest, randoop
+
+TestResourceManagement
+TestData      --------集中管理
+Authorization data----ut中不应包含这个
+VirusSample ----------隔离，加密

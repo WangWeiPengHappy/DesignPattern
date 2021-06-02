@@ -1,0 +1,20 @@
+1.单元测试
+2.level
+UnitTest->
+IntergrityTest->
+UI Test(EndToEndTest)
+
+UT 比较独立，不过多的依赖于其他module
+快速的返回
+
+3.UT Report
+UT 工具
+case，branch，覆盖率
+
+4.流程
+development->UT->PR-->All UT, test case-->merge
+
+5.开发模型
+瀑布开发
+TDD开发（测试驱动开发）
+
